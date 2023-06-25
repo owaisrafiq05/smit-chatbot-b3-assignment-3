@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300&family=Open+Sans:wght@300;500&family=Signika+Negative&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <h2 style="text-align: center;">Javascript to find Odd or Even number</h2>
 
-    <label>Enter Number</label> <br>
-    <input type="number" name=" " id="oddeven" onkeyup="isCheck()"> <span id="showmsg"></span>
+<body>
+    <div class="id2">
+        <strong>
+            <h1 style="text-align: center;">" Type to know your number is Odd or Even number "</h1>
+        </strong>
+        <!-- <img src="./img.jpg" > -->
+
+        <div class="id">
+
+            <label><b>Enter Number</b></label> <br>
+            <br>
+            <input type="number" name=" " id="oddeven" onkeyup="isCheck()">
+            <span id="showmsg"></span>
+        </div>
+    </div>
 
     <script>
 
-        function isCheck( ){
+        function isCheck() {
             var num = document.getElementById('oddeven').value;
             // alert(num);
-            if((num % 2) === 0){
-                document.getElementById('showmsg').innerHTML="Hurray! Number " +num+ " is an even number";
+            if ((num % 2) === 0) {
+                document.getElementById('showmsg').innerHTML = "Hurray! Number " + num + " is an even number";
             }
 
-            else{document.getElementById('showmsg').innerHTML="Oh No! Number " +num+ " is a odd number";}
+            else { document.getElementById('showmsg').innerHTML = "Oh No! Number " + num + " is a odd number"; }
 
-            if(num == ""){
-                document.getElementById('showmsg').innerHTML="";
+            if (num == "") {
+                document.getElementById('showmsg').innerHTML = "";
             }
         }
     </script>
 
 </body>
+
 </html>
